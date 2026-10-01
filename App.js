@@ -1,3 +1,13 @@
+import { FlatList } from 'react-native'; // add to the existing react-native import
+
+const PRODUCTS = ['Laptop', 'Phone', 'Headphones', 'Watch'];
+
+<FlatList
+  style={{ marginTop: 20 }}
+  data={PRODUCTS}
+  keyExtractor={(i) => i}
+  renderItem={({ item }) => <Text style={{ fontSize: 18, padding: 4 }}>{item}</Text>}
+/>
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
 
